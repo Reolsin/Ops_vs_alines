@@ -1,0 +1,8 @@
+﻿  Items.cpp
+C:\Users\smirh\source\repos\Ops_vs_Aliens\Ops_vs_Aliens\Units.h(81,26): warning C4150: удаление указателя на неполный тип "Gamma::weapon"; деструктор не вызван
+C:\Users\smirh\source\repos\Ops_vs_Aliens\Ops_vs_Aliens\Declarations.h(26): message : см. объявление "Gamma::weapon"
+  Menu.cpp
+  Session.cpp
+  Units.cpp
+MSVCRT.lib(exe_main.obj) : error LNK2001: неразрешенный внешний символ _main.
+C:\Users\smirh\source\repos\Ops_vs_Aliens\Release\Ops_vs_Aliens.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

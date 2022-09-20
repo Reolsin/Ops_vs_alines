@@ -1,0 +1,2 @@
+C:\Users\smirh\source\repos\Ops_vs_Aliens\Debug\my_vector.pdb
+C:\Users\smirh\source\repos\Ops_vs_Aliens\my_vector\Debug\my_vector.pdb
