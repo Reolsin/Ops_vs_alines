@@ -1,0 +1,77 @@
+\hypertarget{class_gamma_1_1_game_session}{}\doxysection{Класс Gamma\+::Game\+Session}
+\label{class_gamma_1_1_game_session}\index{Gamma::GameSession@{Gamma::GameSession}}
+
+
+The main class responsible for handling user actions and rendering the interface and map.  
+
+
+
+
+{\ttfamily \#include $<$Session.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_session_af1bfbb373a588a9fb84b0d9c83382640}\label{class_gamma_1_1_game_session_af1bfbb373a588a9fb84b0d9c83382640}} 
+\mbox{\hyperlink{class_gamma_1_1_game_session_af1bfbb373a588a9fb84b0d9c83382640}{Game\+Session}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_session_ab3f4b4f347f92730eabf1896e60dc905}\label{class_gamma_1_1_game_session_ab3f4b4f347f92730eabf1896e60dc905}} 
+\mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} $\ast$ \mbox{\hyperlink{class_gamma_1_1_game_session_ab3f4b4f347f92730eabf1896e60dc905}{alive\+\_\+unit\+\_\+here}} (const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&) const
+\begin{DoxyCompactList}\small\item\em A method for detecting a living unit on a map slot. \end{DoxyCompactList}\item 
+My\+\_\+vector$<$ \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} $\ast$ $>$ \mbox{\hyperlink{class_gamma_1_1_game_session_ac1c06470ed687002932a632350b1ef9a}{dead\+\_\+units\+\_\+here}} (const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&p) const
+\begin{DoxyCompactList}\small\item\em A method for detecting a dead units on a map slot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_session_adb31b9729a8cc5c1e69546ca47498c4b}\label{class_gamma_1_1_game_session_adb31b9729a8cc5c1e69546ca47498c4b}} 
+My\+\_\+vector$<$ My\+\_\+vector$<$ char $>$ $>$ \mbox{\hyperlink{class_gamma_1_1_game_session_adb31b9729a8cc5c1e69546ca47498c4b}{render\+\_\+vision}} (const \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} $\ast$unit) const
+\begin{DoxyCompactList}\small\item\em A method for detecting a living unit on a map slot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamma_1_1_game_session_ad5f6beec31781bde92d180161c61f86e}{execute}} (int button)
+\begin{DoxyCompactList}\small\item\em A method is responsible for processing user keystrokes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gamma_1_1_game_session_a6ded43047221dfe04110637cf5b6959d}{check}} () const
+\begin{DoxyCompactList}\small\item\em A method for checking if all units from any team are dead. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_session_af579a4a1f05d07aa83e769a0bfa435d5}\label{class_gamma_1_1_game_session_af579a4a1f05d07aa83e769a0bfa435d5}} 
+void \mbox{\hyperlink{class_gamma_1_1_game_session_af579a4a1f05d07aa83e769a0bfa435d5}{draw}} () const
+\begin{DoxyCompactList}\small\item\em A method for drawing all interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_session_a63f7e3a0887ca52e66fbbac4dda5a23e}\label{class_gamma_1_1_game_session_a63f7e3a0887ca52e66fbbac4dda5a23e}} 
+bool \mbox{\hyperlink{class_gamma_1_1_game_session_a63f7e3a0887ca52e66fbbac4dda5a23e}{save}} (std\+::ofstream \&)
+\begin{DoxyCompactList}\small\item\em A method for saving current session in format of loading config file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+The main class responsible for handling user actions and rendering the interface and map. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1_game_session_a6ded43047221dfe04110637cf5b6959d}\label{class_gamma_1_1_game_session_a6ded43047221dfe04110637cf5b6959d}} 
+\index{Gamma::GameSession@{Gamma::GameSession}!check@{check}}
+\index{check@{check}!Gamma::GameSession@{Gamma::GameSession}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily bool Game\+Session\+::check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method for checking if all units from any team are dead. 
+
+For ending the current \mbox{\hyperlink{class_gamma_1_1_game_session}{Game\+Session}}. \mbox{\Hypertarget{class_gamma_1_1_game_session_ac1c06470ed687002932a632350b1ef9a}\label{class_gamma_1_1_game_session_ac1c06470ed687002932a632350b1ef9a}} 
+\index{Gamma::GameSession@{Gamma::GameSession}!dead\_units\_here@{dead\_units\_here}}
+\index{dead\_units\_here@{dead\_units\_here}!Gamma::GameSession@{Gamma::GameSession}}
+\doxysubsubsection{\texorpdfstring{dead\_units\_here()}{dead\_units\_here()}}
+{\footnotesize\ttfamily My\+\_\+vector$<$ \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} $\ast$ $>$ Game\+Session\+::dead\+\_\+units\+\_\+here (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+A method for detecting a dead units on a map slot. 
+
+May return several \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} s. \mbox{\Hypertarget{class_gamma_1_1_game_session_ad5f6beec31781bde92d180161c61f86e}\label{class_gamma_1_1_game_session_ad5f6beec31781bde92d180161c61f86e}} 
+\index{Gamma::GameSession@{Gamma::GameSession}!execute@{execute}}
+\index{execute@{execute}!Gamma::GameSession@{Gamma::GameSession}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily bool Gamma\+::\+Game\+Session\+::execute (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A method is responsible for processing user keystrokes. 
+
+Method build \mbox{\hyperlink{struct_gamma_1_1operation__code}{operation\+\_\+code}} structure and calls methods from private area of visibility. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Session.\+h\item 
+Session.\+cpp\end{DoxyCompactItemize}

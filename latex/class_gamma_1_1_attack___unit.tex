@@ -1,0 +1,85 @@
+\hypertarget{class_gamma_1_1_attack___unit}{}\doxysection{Класс Gamma\+::Attack\+\_\+\+Unit}
+\label{class_gamma_1_1_attack___unit}\index{Gamma::Attack\_Unit@{Gamma::Attack\_Unit}}
+
+
+Class responsible for the ability to attack.  
+
+
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+Граф наследования\+:Gamma\+::Attack\+\_\+\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gamma_1_1_attack___unit}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1_attack___unit_a096a9dae42a7f391c59eeed400d2f841}{attack}} (\mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method for attack other \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} by gun. \end{DoxyCompactList}\item 
+const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1_attack___unit_a015e1f1a29a9ec334f7800273772f9af}{attack}} (\mbox{\hyperlink{struct_gamma_1_1_cell}{Cell}} \&)
+\begin{DoxyCompactList}\small\item\em Method for attack \mbox{\hyperlink{class_gamma_1_1_game_level}{Game\+Level}} \mbox{\hyperlink{struct_gamma_1_1_cell}{Cell}} by gun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_a34256730a22dd7346c1518a1655b3142}\label{class_gamma_1_1_attack___unit_a34256730a22dd7346c1518a1655b3142}} 
+\mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$$\ast$ \mbox{\hyperlink{class_gamma_1_1_attack___unit_a34256730a22dd7346c1518a1655b3142}{get\+\_\+gun}} ()
+\begin{DoxyCompactList}\small\item\em For looting dead unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_ae6cc8cf2c1e803c947ae81a6f92868cb}\label{class_gamma_1_1_attack___unit_ae6cc8cf2c1e803c947ae81a6f92868cb}} 
+{\bfseries Attack\+\_\+\+Unit} (double ac, \mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$g)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_a61b7e986add87aefb57a3181f20ca61a}\label{class_gamma_1_1_attack___unit_a61b7e986add87aefb57a3181f20ca61a}} 
+\mbox{\hyperlink{class_gamma_1_1_attack___unit_a61b7e986add87aefb57a3181f20ca61a}{Attack\+\_\+\+Unit}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_ad91914424f9f4e3b1704bae2a504327b}\label{class_gamma_1_1_attack___unit_ad91914424f9f4e3b1704bae2a504327b}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1_attack___unit_ad91914424f9f4e3b1704bae2a504327b}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_aede9c173b5b81ef293479260885149ec}\label{class_gamma_1_1_attack___unit_aede9c173b5b81ef293479260885149ec}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_attack___unit_aede9c173b5b81ef293479260885149ec}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_a324afe2b73b6d0e090a5855b9ffcf661}\label{class_gamma_1_1_attack___unit_a324afe2b73b6d0e090a5855b9ffcf661}} 
+double {\bfseries accuracy}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_af808891840e9103c0850d0320d529deb}\label{class_gamma_1_1_attack___unit_af808891840e9103c0850d0320d529deb}} 
+\mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$ {\bfseries gun}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class responsible for the ability to attack. 
+
+Cant be created. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1_attack___unit_a015e1f1a29a9ec334f7800273772f9af}\label{class_gamma_1_1_attack___unit_a015e1f1a29a9ec334f7800273772f9af}} 
+\index{Gamma::Attack\_Unit@{Gamma::Attack\_Unit}!attack@{attack}}
+\index{attack@{attack}!Gamma::Attack\_Unit@{Gamma::Attack\_Unit}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::string $\ast$ Attack\+\_\+\+Unit\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_gamma_1_1_cell}{Cell}} \&}]{cell }\end{DoxyParamCaption})}
+
+
+
+Method for attack \mbox{\hyperlink{class_gamma_1_1_game_level}{Game\+Level}} \mbox{\hyperlink{struct_gamma_1_1_cell}{Cell}} by gun. 
+
+Only deals damage, \mbox{\hyperlink{class_gamma_1_1_game_session}{Game\+Session}} deals with hit processing. \mbox{\Hypertarget{class_gamma_1_1_attack___unit_a096a9dae42a7f391c59eeed400d2f841}\label{class_gamma_1_1_attack___unit_a096a9dae42a7f391c59eeed400d2f841}} 
+\index{Gamma::Attack\_Unit@{Gamma::Attack\_Unit}!attack@{attack}}
+\index{attack@{attack}!Gamma::Attack\_Unit@{Gamma::Attack\_Unit}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::string $\ast$ Attack\+\_\+\+Unit\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} $\ast$}]{unit }\end{DoxyParamCaption})}
+
+
+
+Method for attack other \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} by gun. 
+
+Only deals damage, \mbox{\hyperlink{class_gamma_1_1_game_session}{Game\+Session}} deals with hit processing. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}

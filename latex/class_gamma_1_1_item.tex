@@ -1,0 +1,64 @@
+\hypertarget{class_gamma_1_1_item}{}\doxysection{Класс Gamma\+::Item}
+\label{class_gamma_1_1_item}\index{Gamma::Item@{Gamma::Item}}
+
+
+Class that stores the state common to all Items.  
+
+
+
+
+{\ttfamily \#include $<$Items.\+h$>$}
+
+Граф наследования\+:Gamma\+::Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gamma_1_1_item}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_ad9bee17c6e02e2fb56e076e0d47e04ec}\label{class_gamma_1_1_item_ad9bee17c6e02e2fb56e076e0d47e04ec}} 
+int {\bfseries up} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_a9d76090492359b72bc1bea9317eb74f5}\label{class_gamma_1_1_item_a9d76090492359b72bc1bea9317eb74f5}} 
+int {\bfseries w} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_abf8be7b2df0be6be50976e3c12490aa8}\label{class_gamma_1_1_item_abf8be7b2df0be6be50976e3c12490aa8}} 
+virtual const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1_item_abf8be7b2df0be6be50976e3c12490aa8}{use}} (\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em The signature of virtual funtion for using items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_a12df0605c11066d78312e318ebb04216}\label{class_gamma_1_1_item_a12df0605c11066d78312e318ebb04216}} 
+{\bfseries Item} (std\+::string, int, int)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_ade27a4f9f9e40e058d1bce876debaafd}\label{class_gamma_1_1_item_ade27a4f9f9e40e058d1bce876debaafd}} 
+\mbox{\hyperlink{class_gamma_1_1_item_ade27a4f9f9e40e058d1bce876debaafd}{Item}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_add54f385dce24c32a6474e5e084d5fef}\label{class_gamma_1_1_item_add54f385dce24c32a6474e5e084d5fef}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1_item_add54f385dce24c32a6474e5e084d5fef}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_a612b37856974410a0a3f19b310a42d8e}\label{class_gamma_1_1_item_a612b37856974410a0a3f19b310a42d8e}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_item_a612b37856974410a0a3f19b310a42d8e}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_ab24afe1e40fc684adfbb7acb13813750}\label{class_gamma_1_1_item_ab24afe1e40fc684adfbb7acb13813750}} 
+std\+::ofstream \& {\bfseries operator$<$$<$} (std\+::ofstream \&ofile, const \mbox{\hyperlink{class_gamma_1_1_item}{Item}} \&item)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_item_a2f8f92eea1c84a32bafc197830873f63}\label{class_gamma_1_1_item_a2f8f92eea1c84a32bafc197830873f63}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_gamma_1_1_item}{Item}} \&item)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class that stores the state common to all Items. 
+
+Cant be created. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Items.\+h\item 
+Items.\+cpp\end{DoxyCompactItemize}

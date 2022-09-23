@@ -1,0 +1,64 @@
+\hypertarget{class_gamma_1_1_take___unit}{}\doxysection{Класс Gamma\+::Take\+\_\+\+Unit}
+\label{class_gamma_1_1_take___unit}\index{Gamma::Take\_Unit@{Gamma::Take\_Unit}}
+
+
+Class responsible for the ability to store items in backpack.  
+
+
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+Граф наследования\+:Gamma\+::Take\+\_\+\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gamma_1_1_take___unit}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_ad228324556896e4a3dd546c81024337b}\label{class_gamma_1_1_take___unit_ad228324556896e4a3dd546c81024337b}} 
+\mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$ \mbox{\hyperlink{class_gamma_1_1_take___unit_ad228324556896e4a3dd546c81024337b}{drop\+\_\+item}} (int)
+\begin{DoxyCompactList}\small\item\em A method for deleting an \mbox{\hyperlink{class_gamma_1_1_item}{Item}} from \mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_a36042bd9fc04f94a97cd8531323e9bb1}\label{class_gamma_1_1_take___unit_a36042bd9fc04f94a97cd8531323e9bb1}} 
+bool \mbox{\hyperlink{class_gamma_1_1_take___unit_a36042bd9fc04f94a97cd8531323e9bb1}{take\+\_\+item}} (\mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$)
+\begin{DoxyCompactList}\small\item\em A method for adding an \mbox{\hyperlink{class_gamma_1_1_item}{Item}} in \mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_ae2d54aea06252e65f3f59f79d6269d42}\label{class_gamma_1_1_take___unit_ae2d54aea06252e65f3f59f79d6269d42}} 
+My\+\_\+vector$<$ \mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_gamma_1_1_take___unit_ae2d54aea06252e65f3f59f79d6269d42}{get\+\_\+items}} ()
+\begin{DoxyCompactList}\small\item\em For looting dead unit and displaying the interface of inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_a4b725ede498fbd6eb648f97c7a226d5d}\label{class_gamma_1_1_take___unit_a4b725ede498fbd6eb648f97c7a226d5d}} 
+{\bfseries Take\+\_\+\+Unit} (int f\+\_\+w, \mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} \&\&bp)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_aecdb9aec44eaddf13c6a153bb18ab737}\label{class_gamma_1_1_take___unit_aecdb9aec44eaddf13c6a153bb18ab737}} 
+\mbox{\hyperlink{class_gamma_1_1_take___unit_aecdb9aec44eaddf13c6a153bb18ab737}{Take\+\_\+\+Unit}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_a90c9644e576b53c0c40cb64a087a544e}\label{class_gamma_1_1_take___unit_a90c9644e576b53c0c40cb64a087a544e}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1_take___unit_a90c9644e576b53c0c40cb64a087a544e}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_a2f7b6f3a5e3f3578bec96d9096ffba01}\label{class_gamma_1_1_take___unit_a2f7b6f3a5e3f3578bec96d9096ffba01}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_take___unit_a2f7b6f3a5e3f3578bec96d9096ffba01}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_a6ddfdfed0444a6cbced63d96e851fd18}\label{class_gamma_1_1_take___unit_a6ddfdfed0444a6cbced63d96e851fd18}} 
+int {\bfseries full\+\_\+weight}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_take___unit_aad8c9d6d80111823a919e32ba6f66c59}\label{class_gamma_1_1_take___unit_aad8c9d6d80111823a919e32ba6f66c59}} 
+\mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} {\bfseries backpack}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class responsible for the ability to store items in backpack. 
+
+Cant be created. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{class_gamma_1_1_game_level}{}\doxysection{Класс Gamma\+::Game\+Level}
+\label{class_gamma_1_1_game_level}\index{Gamma::GameLevel@{Gamma::GameLevel}}
+
+
+The class responsible for storing the map and game items on it.  
+
+
+
+
+{\ttfamily \#include $<$Session.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a69f86db6205951906c980a327aef5de3}\label{class_gamma_1_1_game_level_a69f86db6205951906c980a327aef5de3}} 
+{\bfseries Game\+Level} (int l\+\_\+=100, int h\+\_\+=100)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_af615a65e4c3ae979d963e1b7dbac05b1}\label{class_gamma_1_1_game_level_af615a65e4c3ae979d963e1b7dbac05b1}} 
+{\bfseries Game\+Level} (std\+::ifstream \&)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_aaeb714df7319d075d5d12d862c811a96}\label{class_gamma_1_1_game_level_aaeb714df7319d075d5d12d862c811a96}} 
+My\+\_\+vector$<$ \mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$ $>$ $\ast$ {\bfseries get\+\_\+items} (const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a33f3a501c9f4c1c5260beb6c1abccb2a}\label{class_gamma_1_1_game_level_a33f3a501c9f4c1c5260beb6c1abccb2a}} 
+bool {\bfseries add\+\_\+item} (\mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$, int, int)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a24af08c394dc70dae11e6b1f277f4f80}\label{class_gamma_1_1_game_level_a24af08c394dc70dae11e6b1f277f4f80}} 
+\mbox{\hyperlink{struct_gamma_1_1_cell}{Cell}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a155f5028b0fe7945e2df34947899b791}\label{class_gamma_1_1_game_level_a155f5028b0fe7945e2df34947899b791}} 
+const \mbox{\hyperlink{struct_gamma_1_1_cell}{Cell}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&) const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_acf8317343ebfece63a275a51480c80f7}\label{class_gamma_1_1_game_level_acf8317343ebfece63a275a51480c80f7}} 
+bool {\bfseries point\+\_\+access} (int, int) const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a5bd5ee8ae76b9b108b17148b14be49ac}\label{class_gamma_1_1_game_level_a5bd5ee8ae76b9b108b17148b14be49ac}} 
+bool {\bfseries point\+\_\+on\+\_\+map} (double, double) const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a006451bd2b2c8897a5d9952fb4d85d14}\label{class_gamma_1_1_game_level_a006451bd2b2c8897a5d9952fb4d85d14}} 
+bool {\bfseries is\+\_\+transparent} (double, double) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_a2da758fd4a5a7b2dfbc11b91f3102067}\label{class_gamma_1_1_game_level_a2da758fd4a5a7b2dfbc11b91f3102067}} 
+std\+::ofstream \& {\bfseries save} (std\+::ofstream \&) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_game_level_ac0d55772a3d9176b6ec8b32d130ac602}\label{class_gamma_1_1_game_level_ac0d55772a3d9176b6ec8b32d130ac602}} 
+std\+::ofstream \& {\bfseries operator$<$$<$} (std\+::ofstream \&ofile, const \mbox{\hyperlink{class_gamma_1_1_game_level}{Game\+Level}} \&level)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+The class responsible for storing the map and game items on it. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Session.\+h\item 
+Session.\+cpp\end{DoxyCompactItemize}

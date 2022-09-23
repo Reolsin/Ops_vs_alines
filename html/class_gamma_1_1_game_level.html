@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Operatives_vs_Aliens: Класс Gamma::GameLevel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Operatives_vs_Aliens
+   &#160;<span id="projectnumber">first release</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>Gamma</b></li><li class="navelem"><a class="el" href="class_gamma_1_1_game_level.html">GameLevel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_gamma_1_1_game_level-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Gamma::GameLevel</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The class responsible for storing the map and game items on it.  
+ <a href="class_gamma_1_1_game_level.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_session_8h_source.html">Session.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a69f86db6205951906c980a327aef5de3"><td class="memItemLeft" align="right" valign="top"><a id="a69f86db6205951906c980a327aef5de3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GameLevel</b> (int l_=100, int h_=100)</td></tr>
+<tr class="separator:a69f86db6205951906c980a327aef5de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af615a65e4c3ae979d963e1b7dbac05b1"><td class="memItemLeft" align="right" valign="top"><a id="af615a65e4c3ae979d963e1b7dbac05b1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GameLevel</b> (std::ifstream &amp;)</td></tr>
+<tr class="separator:af615a65e4c3ae979d963e1b7dbac05b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb714df7319d075d5d12d862c811a96"><td class="memItemLeft" align="right" valign="top"><a id="aaeb714df7319d075d5d12d862c811a96"></a>
+My_vector&lt; <a class="el" href="class_gamma_1_1_item.html">Item</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>get_items</b> (const <a class="el" href="struct_gamma_1_1_point.html">Point</a> &amp;p)</td></tr>
+<tr class="separator:aaeb714df7319d075d5d12d862c811a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f3a501c9f4c1c5260beb6c1abccb2a"><td class="memItemLeft" align="right" valign="top"><a id="a33f3a501c9f4c1c5260beb6c1abccb2a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>add_item</b> (<a class="el" href="class_gamma_1_1_item.html">Item</a> *, int, int)</td></tr>
+<tr class="separator:a33f3a501c9f4c1c5260beb6c1abccb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24af08c394dc70dae11e6b1f277f4f80"><td class="memItemLeft" align="right" valign="top"><a id="a24af08c394dc70dae11e6b1f277f4f80"></a>
+<a class="el" href="struct_gamma_1_1_cell.html">Cell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const <a class="el" href="struct_gamma_1_1_point.html">Point</a> &amp;)</td></tr>
+<tr class="separator:a24af08c394dc70dae11e6b1f277f4f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155f5028b0fe7945e2df34947899b791"><td class="memItemLeft" align="right" valign="top"><a id="a155f5028b0fe7945e2df34947899b791"></a>
+const <a class="el" href="struct_gamma_1_1_cell.html">Cell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const <a class="el" href="struct_gamma_1_1_point.html">Point</a> &amp;) const</td></tr>
+<tr class="separator:a155f5028b0fe7945e2df34947899b791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8317343ebfece63a275a51480c80f7"><td class="memItemLeft" align="right" valign="top"><a id="acf8317343ebfece63a275a51480c80f7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>point_access</b> (int, int) const</td></tr>
+<tr class="separator:acf8317343ebfece63a275a51480c80f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd5ee8ae76b9b108b17148b14be49ac"><td class="memItemLeft" align="right" valign="top"><a id="a5bd5ee8ae76b9b108b17148b14be49ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>point_on_map</b> (double, double) const</td></tr>
+<tr class="separator:a5bd5ee8ae76b9b108b17148b14be49ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006451bd2b2c8897a5d9952fb4d85d14"><td class="memItemLeft" align="right" valign="top"><a id="a006451bd2b2c8897a5d9952fb4d85d14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_transparent</b> (double, double) const</td></tr>
+<tr class="separator:a006451bd2b2c8897a5d9952fb4d85d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a2da758fd4a5a7b2dfbc11b91f3102067"><td class="memItemLeft" align="right" valign="top"><a id="a2da758fd4a5a7b2dfbc11b91f3102067"></a>
+std::ofstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (std::ofstream &amp;) const</td></tr>
+<tr class="separator:a2da758fd4a5a7b2dfbc11b91f3102067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:ac0d55772a3d9176b6ec8b32d130ac602"><td class="memItemLeft" align="right" valign="top"><a id="ac0d55772a3d9176b6ec8b32d130ac602"></a>
+std::ofstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ofstream &amp;ofile, const <a class="el" href="class_gamma_1_1_game_level.html">GameLevel</a> &amp;level)</td></tr>
+<tr class="separator:ac0d55772a3d9176b6ec8b32d130ac602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>The class responsible for storing the map and game items on it. </p>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="_session_8h_source.html">Session.h</a></li>
+<li>Session.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+</small></address>
+</body>
+</html>

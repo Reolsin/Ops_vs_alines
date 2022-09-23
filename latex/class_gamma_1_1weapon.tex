@@ -1,0 +1,87 @@
+\hypertarget{class_gamma_1_1weapon}{}\doxysection{Класс Gamma\+::weapon}
+\label{class_gamma_1_1weapon}\index{Gamma::weapon@{Gamma::weapon}}
+
+
+Class representing an instance of a weapon.  
+
+
+
+
+{\ttfamily \#include $<$Items.\+h$>$}
+
+Граф наследования\+:Gamma\+::weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gamma_1_1weapon}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1weapon_a5100cdafe46000ed28c2ca0a5e401fc9}\label{class_gamma_1_1weapon_a5100cdafe46000ed28c2ca0a5e401fc9}} 
+{\bfseries weapon} (std\+::string n, int w, int up, int cur, int full, int d, int rp, double a\+\_\+type)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1weapon_a07d5795ef2213f24fbdaa0e4cb53ea58}\label{class_gamma_1_1weapon_a07d5795ef2213f24fbdaa0e4cb53ea58}} 
+\mbox{\hyperlink{class_gamma_1_1weapon_a07d5795ef2213f24fbdaa0e4cb53ea58}{weapon}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gamma_1_1weapon_a4f6bcb17ee39009e96828e74649ea819}{deal\+\_\+damage}} ()
+\begin{DoxyCompactList}\small\item\em Method that allows to replish weapon\textquotesingle{}s ammo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gamma_1_1weapon_ac17a7552dea6b35f37615f9996089ccb}{reload}} (int, double)
+\begin{DoxyCompactList}\small\item\em Method that allows to replish weapon\textquotesingle{}s ammo. \end{DoxyCompactList}\item 
+virtual const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1weapon_abaa022763af8a07d593a231b35645283}{use}} (\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method that changes current weapon of the unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1weapon_ae7b71d97037cb5d4e32cf2106d1b329e}\label{class_gamma_1_1weapon_ae7b71d97037cb5d4e32cf2106d1b329e}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1weapon_ae7b71d97037cb5d4e32cf2106d1b329e}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1weapon_a1cdccf93d203667aa19236132a5d4ade}\label{class_gamma_1_1weapon_a1cdccf93d203667aa19236132a5d4ade}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1weapon_a1cdccf93d203667aa19236132a5d4ade}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class representing an instance of a weapon. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1weapon_a4f6bcb17ee39009e96828e74649ea819}\label{class_gamma_1_1weapon_a4f6bcb17ee39009e96828e74649ea819}} 
+\index{Gamma::weapon@{Gamma::weapon}!deal\_damage@{deal\_damage}}
+\index{deal\_damage@{deal\_damage}!Gamma::weapon@{Gamma::weapon}}
+\doxysubsubsection{\texorpdfstring{deal\_damage()}{deal\_damage()}}
+{\footnotesize\ttfamily double weapon\+::deal\+\_\+damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that allows to replish weapon\textquotesingle{}s ammo. 
+
+Used in \mbox{\hyperlink{class_gamma_1_1_attack___unit_a096a9dae42a7f391c59eeed400d2f841}{Attack\+\_\+\+Unit.\+attack}}. \mbox{\Hypertarget{class_gamma_1_1weapon_ac17a7552dea6b35f37615f9996089ccb}\label{class_gamma_1_1weapon_ac17a7552dea6b35f37615f9996089ccb}} 
+\index{Gamma::weapon@{Gamma::weapon}!reload@{reload}}
+\index{reload@{reload}!Gamma::weapon@{Gamma::weapon}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily int weapon\+::reload (\begin{DoxyParamCaption}\item[{int}]{ammo,  }\item[{double}]{type }\end{DoxyParamCaption})}
+
+
+
+Method that allows to replish weapon\textquotesingle{}s ammo. 
+
+Used in \mbox{\hyperlink{class_gamma_1_1_operative_a6ad30057b2a983fe83e265125ae877c4}{Operative.\+load\+\_\+ammo}}. Returns the amount of replenished ammunition. \mbox{\Hypertarget{class_gamma_1_1weapon_abaa022763af8a07d593a231b35645283}\label{class_gamma_1_1weapon_abaa022763af8a07d593a231b35645283}} 
+\index{Gamma::weapon@{Gamma::weapon}!use@{use}}
+\index{use@{use}!Gamma::weapon@{Gamma::weapon}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily const std\+::string $\ast$ weapon\+::use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method that changes current weapon of the unit. 
+
+Does not require availability of MP for using. 
+
+Замещает \mbox{\hyperlink{class_gamma_1_1_item_abf8be7b2df0be6be50976e3c12490aa8}{Gamma\+::\+Item}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Items.\+h\item 
+Items.\+cpp\end{DoxyCompactItemize}

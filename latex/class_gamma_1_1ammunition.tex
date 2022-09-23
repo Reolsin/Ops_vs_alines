@@ -1,0 +1,63 @@
+\hypertarget{class_gamma_1_1ammunition}{}\doxysection{Класс Gamma\+::ammunition}
+\label{class_gamma_1_1ammunition}\index{Gamma::ammunition@{Gamma::ammunition}}
+
+
+Class representing an instance of an ammunition.  
+
+
+
+
+{\ttfamily \#include $<$Items.\+h$>$}
+
+Граф наследования\+:Gamma\+::ammunition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gamma_1_1ammunition}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1ammunition_af3adc412c099b340a1169bba81e2bc10}\label{class_gamma_1_1ammunition_af3adc412c099b340a1169bba81e2bc10}} 
+{\bfseries ammunition} (std\+::string n, int w, int up, int cur, int ful, double a\+\_\+type)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1ammunition_a561426367f5a18319ab57eb5166cbff1}\label{class_gamma_1_1ammunition_a561426367f5a18319ab57eb5166cbff1}} 
+\mbox{\hyperlink{class_gamma_1_1ammunition_a561426367f5a18319ab57eb5166cbff1}{ammunition}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+virtual const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1ammunition_abcc9a884a13cf4a8591481d27d58ef1d}{use}} (\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method that replish \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}\textquotesingle{}s weapon ammo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1ammunition_a3f71e847a49766c913c4bd6ea723fe1c}\label{class_gamma_1_1ammunition_a3f71e847a49766c913c4bd6ea723fe1c}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1ammunition_a3f71e847a49766c913c4bd6ea723fe1c}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1ammunition_a631d7beedca01878801c5974ff9ac4f1}\label{class_gamma_1_1ammunition_a631d7beedca01878801c5974ff9ac4f1}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1ammunition_a631d7beedca01878801c5974ff9ac4f1}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class representing an instance of an ammunition. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1ammunition_abcc9a884a13cf4a8591481d27d58ef1d}\label{class_gamma_1_1ammunition_abcc9a884a13cf4a8591481d27d58ef1d}} 
+\index{Gamma::ammunition@{Gamma::ammunition}!use@{use}}
+\index{use@{use}!Gamma::ammunition@{Gamma::ammunition}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily const std\+::string $\ast$ ammunition\+::use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method that replish \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}\textquotesingle{}s weapon ammo. 
+
+Requires availability of MP for using. 
+
+Замещает \mbox{\hyperlink{class_gamma_1_1_item_abf8be7b2df0be6be50976e3c12490aa8}{Gamma\+::\+Item}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Items.\+h\item 
+Items.\+cpp\end{DoxyCompactItemize}

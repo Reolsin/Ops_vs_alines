@@ -1,0 +1,86 @@
+\hypertarget{class_gamma_1_1_operative}{}\doxysection{Класс Gamma\+::Operative}
+\label{class_gamma_1_1_operative}\index{Gamma::Operative@{Gamma::Operative}}
+
+
+Class representing an instance of an operative.  
+
+
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+Граф наследования\+:Gamma\+::Operative\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gamma_1_1_operative}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_operative_ae65e687d22fe53577f6010a500eb8816}\label{class_gamma_1_1_operative_ae65e687d22fe53577f6010a500eb8816}} 
+{\bfseries Operative} (std\+::string n, int x, int y, int cur\+\_\+hp, int hp, int cur\+\_\+mp, int mp, int r, int move, \mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$, double, int, \mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} \&\&)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_operative_a4c14bf3ee6a984cf41ef189b72265050}\label{class_gamma_1_1_operative_a4c14bf3ee6a984cf41ef189b72265050}} 
+\mbox{\hyperlink{class_gamma_1_1_operative_a4c14bf3ee6a984cf41ef189b72265050}{Operative}} (std\+::ifstream \&file)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1_operative_a90456ab6b5c3a8057f79e0bc48f2d2c9}{use\+\_\+item}} (int)
+\begin{DoxyCompactList}\small\item\em Methed of using an item by a unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gamma_1_1_operative_a6ad30057b2a983fe83e265125ae877c4}{load\+\_\+ammo}} (int, double)
+\begin{DoxyCompactList}\small\item\em Method that allows to change ammunition in \mbox{\hyperlink{class_gamma_1_1_operative}{Operative}}\textquotesingle{}s weapon. \end{DoxyCompactList}\item 
+const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1_operative_aef0c2ae1a01863cfb2e770d48ab2db5d}{change\+\_\+weapon}} (\mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method that allows to change ammunition in \mbox{\hyperlink{class_gamma_1_1_operative}{Operative}}\textquotesingle{}s weapon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_operative_a746f559c0d4c8277a7fc235f8f37cccd}\label{class_gamma_1_1_operative_a746f559c0d4c8277a7fc235f8f37cccd}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1_operative_a746f559c0d4c8277a7fc235f8f37cccd}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_operative_ae16c0994930a33f106ea7c5627fd5e82}\label{class_gamma_1_1_operative_ae16c0994930a33f106ea7c5627fd5e82}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_operative_ae16c0994930a33f106ea7c5627fd5e82}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Class representing an instance of an operative. 
+
+Can attack and store items in backpack. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1_operative_aef0c2ae1a01863cfb2e770d48ab2db5d}\label{class_gamma_1_1_operative_aef0c2ae1a01863cfb2e770d48ab2db5d}} 
+\index{Gamma::Operative@{Gamma::Operative}!change\_weapon@{change\_weapon}}
+\index{change\_weapon@{change\_weapon}!Gamma::Operative@{Gamma::Operative}}
+\doxysubsubsection{\texorpdfstring{change\_weapon()}{change\_weapon()}}
+{\footnotesize\ttfamily const std\+::string $\ast$ Operative\+::change\+\_\+weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$}]{gun2 }\end{DoxyParamCaption})}
+
+
+
+Method that allows to change ammunition in \mbox{\hyperlink{class_gamma_1_1_operative}{Operative}}\textquotesingle{}s weapon. 
+
+It calls in method \mbox{\hyperlink{class_gamma_1_1weapon_abaa022763af8a07d593a231b35645283}{weapon.\+use}}. \mbox{\Hypertarget{class_gamma_1_1_operative_a6ad30057b2a983fe83e265125ae877c4}\label{class_gamma_1_1_operative_a6ad30057b2a983fe83e265125ae877c4}} 
+\index{Gamma::Operative@{Gamma::Operative}!load\_ammo@{load\_ammo}}
+\index{load\_ammo@{load\_ammo}!Gamma::Operative@{Gamma::Operative}}
+\doxysubsubsection{\texorpdfstring{load\_ammo()}{load\_ammo()}}
+{\footnotesize\ttfamily int Operative\+::load\+\_\+ammo (\begin{DoxyParamCaption}\item[{int}]{cur\+\_\+ammo,  }\item[{double}]{ammo\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Method that allows to change ammunition in \mbox{\hyperlink{class_gamma_1_1_operative}{Operative}}\textquotesingle{}s weapon. 
+
+It calls in method \mbox{\hyperlink{class_gamma_1_1ammunition_abcc9a884a13cf4a8591481d27d58ef1d}{ammunition.\+use}} . \mbox{\Hypertarget{class_gamma_1_1_operative_a90456ab6b5c3a8057f79e0bc48f2d2c9}\label{class_gamma_1_1_operative_a90456ab6b5c3a8057f79e0bc48f2d2c9}} 
+\index{Gamma::Operative@{Gamma::Operative}!use\_item@{use\_item}}
+\index{use\_item@{use\_item}!Gamma::Operative@{Gamma::Operative}}
+\doxysubsubsection{\texorpdfstring{use\_item()}{use\_item()}}
+{\footnotesize\ttfamily const std\+::string $\ast$ Operative\+::use\+\_\+item (\begin{DoxyParamCaption}\item[{int}]{bind }\end{DoxyParamCaption})}
+
+
+
+Methed of using an item by a unit. 
+
+Called primarily during an \mbox{\hyperlink{class_gamma_1_1_item}{Item}}\textquotesingle{}s use procedure.\textbackslash{}n\+Returns the message that shows result of using the \mbox{\hyperlink{class_gamma_1_1_item}{Item}}. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}

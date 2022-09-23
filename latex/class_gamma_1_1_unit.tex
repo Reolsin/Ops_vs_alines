@@ -1,0 +1,110 @@
+\hypertarget{class_gamma_1_1_unit}{}\doxysection{Класс Gamma\+::Unit}
+\label{class_gamma_1_1_unit}\index{Gamma::Unit@{Gamma::Unit}}
+
+
+Class that stores the state common to all Units.  
+
+
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+Граф наследования\+:Gamma\+::Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.301370cm]{class_gamma_1_1_unit}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a9d5467faa30e36f8cd07cd592365d889}\label{class_gamma_1_1_unit_a9d5467faa30e36f8cd07cd592365d889}} 
+bool {\bfseries move} (const \mbox{\hyperlink{struct_gamma_1_1_point}{Point}} \&)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a4a1926decfb9389130bc5056d203083e}\label{class_gamma_1_1_unit_a4a1926decfb9389130bc5056d203083e}} 
+\mbox{\hyperlink{struct_gamma_1_1_point}{Point}} {\bfseries pos} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_ad703a35f81eed60cf6f4372b305bde20}\label{class_gamma_1_1_unit_ad703a35f81eed60cf6f4372b305bde20}} 
+int {\bfseries vision} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a3d1fdedb7cf63ea76a867b44c1a97e51}\label{class_gamma_1_1_unit_a3d1fdedb7cf63ea76a867b44c1a97e51}} 
+void {\bfseries refresh} ()
+\item 
+int \mbox{\hyperlink{class_gamma_1_1_unit_aa6dd2feb3133f07f4e4dbae2dd4fb2b5}{change\+\_\+\+HP}} (int)
+\begin{DoxyCompactList}\small\item\em Method that allows to change hp of \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a2d093c71970654135e2f8a3ad4ca3d64}\label{class_gamma_1_1_unit_a2d093c71970654135e2f8a3ad4ca3d64}} 
+void \mbox{\hyperlink{class_gamma_1_1_unit_a2d093c71970654135e2f8a3ad4ca3d64}{change\+\_\+\+MP}} (int)
+\begin{DoxyCompactList}\small\item\em Method that allows to change MP of \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a354d15f2cc4a9efeb842b00baf05bae5}\label{class_gamma_1_1_unit_a354d15f2cc4a9efeb842b00baf05bae5}} 
+bool \mbox{\hyperlink{class_gamma_1_1_unit_a354d15f2cc4a9efeb842b00baf05bae5}{check\+\_\+\+MP}} (int) const
+\begin{DoxyCompactList}\small\item\em Method that checks that \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} has enough MP. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a4f22e638bc154edca3d103be5f11ac6e}\label{class_gamma_1_1_unit_a4f22e638bc154edca3d103be5f11ac6e}} 
+bool {\bfseries is\+\_\+alive} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a1f77372e256cbffa2e217668bf443622}\label{class_gamma_1_1_unit_a1f77372e256cbffa2e217668bf443622}} 
+std\+::string {\bfseries name\+\_\+} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a6f062b99c1e9eaedac16bed6b6cf5bdf}\label{class_gamma_1_1_unit_a6f062b99c1e9eaedac16bed6b6cf5bdf}} 
+char {\bfseries avatar} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gamma_1_1_unit_aea062a8c86fab0ac8b6f790de4b14ea6}{Unit}} (std\+::string n, int x, int y, int cur\+\_\+hp, int hp, int cur\+\_\+mp, int mp, int r, int move)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_ad9627767602459b116f783c5cc88764d}\label{class_gamma_1_1_unit_ad9627767602459b116f783c5cc88764d}} 
+\mbox{\hyperlink{class_gamma_1_1_unit_ad9627767602459b116f783c5cc88764d}{Unit}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a894fa8a994620ffe36c0bb3ac6b1710c}\label{class_gamma_1_1_unit_a894fa8a994620ffe36c0bb3ac6b1710c}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1_unit_a894fa8a994620ffe36c0bb3ac6b1710c}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_ad8133bc8c4245eaf856f4517b51c994f}\label{class_gamma_1_1_unit_ad8133bc8c4245eaf856f4517b51c994f}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_unit_ad8133bc8c4245eaf856f4517b51c994f}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a3e8d5407a3948d73e1b5d86c98983d71}\label{class_gamma_1_1_unit_a3e8d5407a3948d73e1b5d86c98983d71}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ofile, const \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} \&unit)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_unit_a3f59bde5566e75b31d62570e81723a06}\label{class_gamma_1_1_unit_a3f59bde5566e75b31d62570e81723a06}} 
+std\+::ofstream \& {\bfseries operator$<$$<$} (std\+::ofstream \&ofile, const \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}} \&unit)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class that stores the state common to all Units. 
+
+Cant be created. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_gamma_1_1_unit_aea062a8c86fab0ac8b6f790de4b14ea6}\label{class_gamma_1_1_unit_aea062a8c86fab0ac8b6f790de4b14ea6}} 
+\index{Gamma::Unit@{Gamma::Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!Gamma::Unit@{Gamma::Unit}}
+\doxysubsubsection{\texorpdfstring{Unit()}{Unit()}}
+{\footnotesize\ttfamily Unit\+::\+Unit (\begin{DoxyParamCaption}\item[{std\+::string}]{n,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{cur\+\_\+hp,  }\item[{int}]{hp,  }\item[{int}]{cur\+\_\+mp,  }\item[{int}]{mp,  }\item[{int}]{r,  }\item[{int}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em n} & name of the unit \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1_unit_aa6dd2feb3133f07f4e4dbae2dd4fb2b5}\label{class_gamma_1_1_unit_aa6dd2feb3133f07f4e4dbae2dd4fb2b5}} 
+\index{Gamma::Unit@{Gamma::Unit}!change\_HP@{change\_HP}}
+\index{change\_HP@{change\_HP}!Gamma::Unit@{Gamma::Unit}}
+\doxysubsubsection{\texorpdfstring{change\_HP()}{change\_HP()}}
+{\footnotesize\ttfamily int Unit\+::change\+\_\+\+HP (\begin{DoxyParamCaption}\item[{int}]{HP }\end{DoxyParamCaption})}
+
+
+
+Method that allows to change hp of \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}. 
+
+It calls in method \mbox{\hyperlink{class_gamma_1_1_attack___unit_a096a9dae42a7f391c59eeed400d2f841}{Attack\+\_\+\+Unit.\+attack}} and aidkit.\+use.\+Returns the amount of changed hp. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}

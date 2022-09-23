@@ -1,0 +1,63 @@
+\hypertarget{class_gamma_1_1aidkit}{}\doxysection{Класс Gamma\+::aidkit}
+\label{class_gamma_1_1aidkit}\index{Gamma::aidkit@{Gamma::aidkit}}
+
+
+Class representing an instance of an aidkit.  
+
+
+
+
+{\ttfamily \#include $<$Items.\+h$>$}
+
+Граф наследования\+:Gamma\+::aidkit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gamma_1_1aidkit}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1aidkit_a66da4fbb86dfd7b4bea6941c409e97f3}\label{class_gamma_1_1aidkit_a66da4fbb86dfd7b4bea6941c409e97f3}} 
+{\bfseries aidkit} (std\+::string n, int w, int up, int cur, int ful, int heal)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1aidkit_a597cea12bce1384330d363fa2985eed4}\label{class_gamma_1_1aidkit_a597cea12bce1384330d363fa2985eed4}} 
+\mbox{\hyperlink{class_gamma_1_1aidkit_a597cea12bce1384330d363fa2985eed4}{aidkit}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+virtual const std\+::string $\ast$ \mbox{\hyperlink{class_gamma_1_1aidkit_a7535d497d52262f5ca49a3dd9fcc55ea}{use}} (\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method that heals unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1aidkit_a477c88cc675dad9f613af6795de425df}\label{class_gamma_1_1aidkit_a477c88cc675dad9f613af6795de425df}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1aidkit_a477c88cc675dad9f613af6795de425df}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1aidkit_a488944086217b5aa7d0461d6a11f3a7f}\label{class_gamma_1_1aidkit_a488944086217b5aa7d0461d6a11f3a7f}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1aidkit_a488944086217b5aa7d0461d6a11f3a7f}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class representing an instance of an aidkit. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_gamma_1_1aidkit_a7535d497d52262f5ca49a3dd9fcc55ea}\label{class_gamma_1_1aidkit_a7535d497d52262f5ca49a3dd9fcc55ea}} 
+\index{Gamma::aidkit@{Gamma::aidkit}!use@{use}}
+\index{use@{use}!Gamma::aidkit@{Gamma::aidkit}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily const std\+::string $\ast$ aidkit\+::use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gamma_1_1_operative}{Operative}} $\ast$}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method that heals unit. 
+
+Requires availability of MP for using. 
+
+Замещает \mbox{\hyperlink{class_gamma_1_1_item_abf8be7b2df0be6be50976e3c12490aa8}{Gamma\+::\+Item}}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Items.\+h\item 
+Items.\+cpp\end{DoxyCompactItemize}

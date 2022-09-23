@@ -1,0 +1,50 @@
+\hypertarget{class_gamma_1_1_alien__range}{}\doxysection{Класс Gamma\+::Alien\+\_\+range}
+\label{class_gamma_1_1_alien__range}\index{Gamma::Alien\_range@{Gamma::Alien\_range}}
+
+
+Class representing an instance of an alien range.  
+
+
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+Граф наследования\+:Gamma\+::Alien\+\_\+range\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gamma_1_1_alien__range}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_alien__range_a33dffe1ecbfa677ee012fb4dc6108ce6}\label{class_gamma_1_1_alien__range_a33dffe1ecbfa677ee012fb4dc6108ce6}} 
+{\bfseries Alien\+\_\+range} (std\+::string n, int x, int y, int cur\+\_\+hp, int hp, int cur\+\_\+mp, int mp, int r, int move, \mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$, double ac)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_alien__range_ace9c3addd9d0b15e1784023ebb1e393d}\label{class_gamma_1_1_alien__range_ace9c3addd9d0b15e1784023ebb1e393d}} 
+\mbox{\hyperlink{class_gamma_1_1_alien__range_ace9c3addd9d0b15e1784023ebb1e393d}{Alien\+\_\+range}} (std\+::ifstream \&file)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_alien__range_a980088396093f8dbef8415299fd528aa}\label{class_gamma_1_1_alien__range_a980088396093f8dbef8415299fd528aa}} 
+\mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$ \mbox{\hyperlink{class_gamma_1_1_alien__range_a980088396093f8dbef8415299fd528aa}{swap\+\_\+gun}} (\mbox{\hyperlink{class_gamma_1_1weapon}{weapon}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method for changing current weapon for another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_alien__range_ad64f9240d2c4ef5c63cdecc50f183934}\label{class_gamma_1_1_alien__range_ad64f9240d2c4ef5c63cdecc50f183934}} 
+virtual std\+::ostream \& \mbox{\hyperlink{class_gamma_1_1_alien__range_ad64f9240d2c4ef5c63cdecc50f183934}{display}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method for displaying the panel of object on interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_alien__range_a759859441996bfc37487c7130fa64236}\label{class_gamma_1_1_alien__range_a759859441996bfc37487c7130fa64236}} 
+virtual std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_alien__range_a759859441996bfc37487c7130fa64236}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Class representing an instance of an alien range. 
+
+Can attack and change weapon. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}

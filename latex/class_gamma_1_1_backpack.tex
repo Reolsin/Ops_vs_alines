@@ -1,0 +1,65 @@
+\hypertarget{class_gamma_1_1_backpack}{}\doxysection{Класс Gamma\+::Backpack}
+\label{class_gamma_1_1_backpack}\index{Gamma::Backpack@{Gamma::Backpack}}
+
+
+Class for storing items of \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}.  
+
+
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_a8fa19b9cd26959dd1eb371e45443bd55}\label{class_gamma_1_1_backpack_a8fa19b9cd26959dd1eb371e45443bd55}} 
+{\bfseries Backpack} (int size=4)
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_aac33cac223bcf15451d221fccdd719e3}\label{class_gamma_1_1_backpack_aac33cac223bcf15451d221fccdd719e3}} 
+\mbox{\hyperlink{class_gamma_1_1_backpack_aac33cac223bcf15451d221fccdd719e3}{Backpack}} (std\+::ifstream \&)
+\begin{DoxyCompactList}\small\item\em Constructor that builds object with loading config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_ad3702e550eb6708fe0d69c686e856b0f}\label{class_gamma_1_1_backpack_ad3702e550eb6708fe0d69c686e856b0f}} 
+{\bfseries Backpack} (\mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} \&\&bp) noexcept
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_adb3baceecff13147a2f7fadd42e09eb0}\label{class_gamma_1_1_backpack_adb3baceecff13147a2f7fadd42e09eb0}} 
+\mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} \& {\bfseries operator=} (\mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} \&\&) noexcept
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_ae33961446ad2e3eaa696a2315c32180f}\label{class_gamma_1_1_backpack_ae33961446ad2e3eaa696a2315c32180f}} 
+My\+\_\+vector$<$ \mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_gamma_1_1_backpack_ae33961446ad2e3eaa696a2315c32180f}{get\+\_\+items}} ()
+\begin{DoxyCompactList}\small\item\em Method that allows \mbox{\hyperlink{class_gamma_1_1_game_session}{Game\+Session}} to change items of it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_a94fcf9588b7546b7ae3228528ed52917}\label{class_gamma_1_1_backpack_a94fcf9588b7546b7ae3228528ed52917}} 
+int {\bfseries w} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_a475de901d74ff9c116647e2b33cdca3e}\label{class_gamma_1_1_backpack_a475de901d74ff9c116647e2b33cdca3e}} 
+bool {\bfseries not\+\_\+full} () const
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_afe9063eea3b2180066eff0aa4d3214e2}\label{class_gamma_1_1_backpack_afe9063eea3b2180066eff0aa4d3214e2}} 
+bool \mbox{\hyperlink{class_gamma_1_1_backpack_afe9063eea3b2180066eff0aa4d3214e2}{put\+\_\+item}} (\mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$)
+\begin{DoxyCompactList}\small\item\em A method for adding an \mbox{\hyperlink{class_gamma_1_1_item}{Item}} in it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_a7007529776e35e5c1f27d2ac3401e137}\label{class_gamma_1_1_backpack_a7007529776e35e5c1f27d2ac3401e137}} 
+\mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$ \mbox{\hyperlink{class_gamma_1_1_backpack_a7007529776e35e5c1f27d2ac3401e137}{drop\+\_\+item}} (int)
+\begin{DoxyCompactList}\small\item\em A method for deleting an \mbox{\hyperlink{class_gamma_1_1_item}{Item}} from it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_a2c96575527d44826570dfe5a2bc15e3e}\label{class_gamma_1_1_backpack_a2c96575527d44826570dfe5a2bc15e3e}} 
+\mbox{\hyperlink{class_gamma_1_1_item}{Item}} $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (int) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_a6892d8f09239df18b31da8384a16f61a}\label{class_gamma_1_1_backpack_a6892d8f09239df18b31da8384a16f61a}} 
+std\+::ofstream \& \mbox{\hyperlink{class_gamma_1_1_backpack_a6892d8f09239df18b31da8384a16f61a}{save}} (std\+::ofstream \&) const
+\begin{DoxyCompactList}\small\item\em Method for saving the object in format of configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamma_1_1_backpack_ade11f4b58f3f9ee5a77093bc08b78b66}\label{class_gamma_1_1_backpack_ade11f4b58f3f9ee5a77093bc08b78b66}} 
+std\+::ofstream \& {\bfseries operator$<$$<$} (std\+::ofstream \&ofile, const \mbox{\hyperlink{class_gamma_1_1_backpack}{Backpack}} \&bp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Class for storing items of \mbox{\hyperlink{class_gamma_1_1_unit}{Unit}}. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}
